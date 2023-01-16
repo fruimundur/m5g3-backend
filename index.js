@@ -5,9 +5,7 @@ const express = require('express')
 const cors = require('cors');
 require('dotenv').config();
 
-const { Pool } = require('pg'); //this line is only needed for the PostgreSQL version
-const { MongoDBNamespace, ObjectId } = require('mongodb');
-const pool = new Pool() //this line is only needed for the PostgreSQL version
+const { ObjectId } = require('mongodb');
 
 const MongoClient = require('mongodb').MongoClient;
 const uri = `mongodb+srv://fruimund:${process.env.MONGOPASS}@cluster0.lkim3qg.mongodb.net/?retryWrites=true&w=majority`;
